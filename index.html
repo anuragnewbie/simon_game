@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>🎆Simon Game🎆</title>
+  <!-- CDN link to bootstrap stlesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- link to external style sheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- cdn link to google font  -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        <h1 id="level-title">Press A Key to Start</h1>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-6">
+        <div type="button" id="green" class="btn green"></div>
+      </div>
+ 
+      <div class="col-6">
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="col-6">
+        <div type="button" id="yellow" class="btn yellow"></div>
+      </div>
+
+      <div class="col-6">
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
