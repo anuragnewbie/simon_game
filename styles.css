@@ -6,7 +6,7 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  margin:  8% 0;
+  margin:  8% 0 6% 0;
   color: #FEF2BF;
 }
 
@@ -67,4 +67,11 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+@media screen and (max-width: 1275px)
+{
+  #level-title {
+    font-size: 1.5rem;
+  }
 }

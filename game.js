@@ -1,14 +1,12 @@
 var buttonColours = ["red", "blue", "green", "yellow"], gamePattern = [], userClickedPattern = [], level=0, started=true;
 
-// game starts by pressing a key once...
+// game starts by pressing the button once...
 function game_start () {
-	$("body").on("keypress", function () {
-		if(started === true)
-			nextSequence(), started=false;
-	});
+	if(started === true)
+		nextSequence(), started=false;
 }
 
-game_start();
+//game_start();
 
 // button clicks to play the game and promote to next levels...
 $(".btn").on("click", function () {
@@ -41,7 +39,7 @@ function generateSequence (currentLevel) {
 	 		$("body").removeClass("game-over");
 	 	}, 200);
 	 	playSound("wrong");
-	 	$("h1#level-title").text("Game Over, Press Any Key to Restart");
+	 	$("h1#level-title").text("Game Over, Press the button to Restart");
 	 	startOver();
 	}
 }
